@@ -3,8 +3,28 @@ import { SignedIn, SignedOut, SignIn, SignInButton, SignUpButton, UserButton } f
 import Image from "next/image";
 
 export default function Home() {
-  return (
-    <div className="m-10">
- Homely </div>
-);
+return (
+    <div className="mt-20">
+      <SignedOut>
+              
+                <SignInButton>
+                  <Button>
+                    Login
+                  </Button>
+                </SignInButton>
+                <SignUpButton>
+                  <Button>
+                    Signup
+                  </Button>
+                </SignUpButton>
+              
+              
+                
+              
+        </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+    </div>
+  );
 }
