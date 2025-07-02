@@ -4,7 +4,6 @@ import { api } from "../../convex/_generated/api";
 
 export const useUserRole = () => {
   const { user } = useUser();
-debugger
   const userData = useQuery(api.users.getUserByClerkId, {
     clerkId: user?.id || "",
   });
