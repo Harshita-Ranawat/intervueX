@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 const useMeetingActions = () => {
   const router = useRouter();
   const client = useStreamVideoClient();
-
+debugger
   const createInstantMeeting = async () => {
     if (!client) return;
 

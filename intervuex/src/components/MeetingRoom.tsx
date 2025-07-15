@@ -27,7 +27,7 @@ function MeetingRoom() {
   const { useCallCallingState } = useCallStateHooks();
 
   const callingState = useCallCallingState();
-
+ debugger
   if (callingState !== CallingState.JOINED) {
     return (
       <div className="h-96 flex items-center justify-center">
