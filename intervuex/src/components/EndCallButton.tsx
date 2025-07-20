@@ -9,6 +9,7 @@ function EndCallButton() {
   const call = useCall();
   const router = useRouter();
   const { useLocalParticipant } = useCallStateHooks();
+  debugger
   const localParticipant = useLocalParticipant();
 
   const updateInterviewStatus = useMutation(api.interviews.updateInterviewStatus);
@@ -24,6 +25,7 @@ function EndCallButton() {
   if (!isMeetingOwner) return null;
 
   const endCall = async () => {
+    debugger
     try {
       await call.endCall();
 
